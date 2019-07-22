@@ -7,5 +7,5 @@ class User < ActiveRecord::Base
   has_many :comments               #commentsテーブルとのアソシエーション
 
   validates :nickname, presence: true, length: { maximum: 6 }
-  validates :nickname, presence: true
+
 end
